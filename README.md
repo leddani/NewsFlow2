@@ -1,1 +1,1 @@
-# NewsFlow2
+# NewsFlow-AI-Editor

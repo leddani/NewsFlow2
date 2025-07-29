@@ -1,0 +1,24 @@
+# NewsFlow AI Editor - Environment Variables
+
+# Telegram Bot Configuration
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+TELEGRAM_CHAT_ID=your_chat_id_here
+
+# LLM Configuration (OpenAI)
+OPENAI_API_KEY=your_openai_api_key_here
+
+# WordPress Configuration
+WORDPRESS_SITE_URL=https://zerikombit.com
+WORDPRESS_USERNAME=zerikombit
+WORDPRESS_APP_PASSWORD=ev6C NwpG ISMV bzXw pl1p 5ck6
+WORDPRESS_AUTHOR_ID=1
+
+# Database Configuration (SQLite by default)
+DATABASE_URL=sqlite:///./newsflow.db
+
+# Scraping Configuration
+SCRAPING_INTERVAL_MINUTES=5
+MAX_ARTICLES_PER_SCRAPE=10
+
+# Logging Configuration
+LOG_LEVEL=INFO 

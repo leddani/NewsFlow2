@@ -1,0 +1,95 @@
+Transformo tekstin më poshtë në një lajm të përpunuar dhe të formuluar sipas standardeve profesionale të gazetarisë online.
+
+🚨 **RREGULLA TË RËNDËSISHME - MOS I SHKEL KURRE:**
+
+1. **❌ MOS KRIJO LAJME TË REJA** - Përdor VETËM tekstin origjinal
+2. **❌ MOS SHTO INFORMACION QË NUK EKZISTON** - Mos bëj supozime
+3. **❌ MOS PËRZIE DY LAJME** - Përpunoj vetëm një lajm në një kohë
+4. **✅ PËRDOR TITULLIN ORIGJINAL** - Vetëm rregullo sintaksën
+5. **✅ PËRDOR PËRMBJTJEN ORIGJINALE** - Vetëm rregullo gramatikën dhe stilin
+
+---
+
+## 📋 **INSTRUKSIONET PËR PËRPUNIM:**
+
+### **📝 Titulli:**
+- **PËRDOR TITULLIN ORIGJINAL** që është dhënë
+- Rregullo vetëm sintaksën dhe gramatikën
+- Mos e ndrysho kuptimin
+- Max 15 fjalë
+
+### **📄 Përmbajtja:**
+- **PËRDOR PËRMBJTJEN ORIGJINALE** që është dhënë
+- Rregullo vetëm:
+  - Gramatikën dhe sintaksën
+  - Stilin profesional
+  - Ndarjen në paragrafë
+- **MOS SHTO** informacion që nuk ekziston
+- **MOS HEQ** informacion të rëndësishëm
+
+### **🎨 Stili:**
+- Gjuhë e thjeshtë dhe profesionale
+- Paragrafë të shkurtër (2-3 fjali)
+- Informativ dhe neutral
+- Mos përdor thënie të zakonshme
+
+---
+
+## 📷 **FOTOT:**
+- **PËRDOR VETËM FOTOT QË JANË DHËNË**
+- Foton e parë si featured_image
+- Fotot e tjera në përmbajtje
+- **MOS SHTO FOTO TË REJA**
+
+---
+
+## 🧾 **FORMATI JSON:**
+
+```json
+{
+  "title": "TITULLI ORIGJINAL I RREGULLUAR",
+  "featured_image": "FOTOJA E PARË NGA LISTA",
+  "content": {
+    "introduction": "PARAGRAFI I PARË I PËRMBJTJES ORIGJINALE",
+    "body": [
+      "PARAGRAFI I DYTË I PËRMBJTJES ORIGJINALE",
+      "PARAGRAFI I TRETË I PËRMBJTJES ORIGJINALE",
+      "PARAGRAFI I KATËRT I PËRMBJTJES ORIGJINALE"
+    ],
+    "conclusion": "PARAGRAFI I FUNDIT I PËRMBJTJES ORIGJINALE"
+  },
+  "category": "KATEGORIA E LAJMIT",
+  "tags": ["TAG1", "TAG2", "TAG3"]
+}
+```
+
+---
+
+## 📋 **TEKSTI ORIGJINAL QË DUHET PËRPUNUAR:**
+
+**Titulli origjinal:** {{ title }}
+
+**URL:** {{ url }}
+
+**Përmbajtja origjinale:** {{ content }}
+
+**Fotot e disponueshme:**
+{% if images %}
+[
+{% for image in images %}
+  "{{ image }}"{% if not loop.last %},{% endif %}
+{% endfor %}
+]
+{% else %}
+[]
+{% endif %}
+
+---
+
+## ⚠️ **KUJDES:**
+- **PËRDOR VETËM** informacionin që është dhënë
+- **MOS KRIJO** përmbajtje të reja
+- **MOS SHTO** detaje që nuk ekzistojnë
+- **RREGULLO VETËM** stilin dhe gramatikën
+
+**Jep rezultatin në format JSON si më sipër.** 
